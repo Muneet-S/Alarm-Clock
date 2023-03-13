@@ -1,0 +1,112 @@
+/* style for body element */
+body{
+	margin : 1rem;
+	padding: 1rem;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* style for the alarm clock container */
+#container{
+	box-sizing: border-box;
+	border: 2px solid black;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+	border-radius: 3rem;  
+	background: linear-gradient(90deg, #f0f -19%, #00f 216%);
+}
+
+/* styles for the current time bar */
+#current-time{
+	padding: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: snow;
+}
+
+/* to set the styles for input fields container */
+#input-field{
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+	margin: 1rem 0.2rem;
+	align-items: center;
+}
+
+/* set styles for input fields */
+#input-field input{
+	width: 1rem;
+	height: 20px;
+	border-radius: 6px;
+    border-width: 1px;
+}
+
+/* styling for am-pm button */
+#input-field #am{
+	height: 1.63rem;
+	padding: 1px;
+	cursor: pointer;
+}
+
+/* style for buttons in the alarm clock */
+.btn{
+	border: 2px solid snow;
+	background-color: transparent;
+	color: snow;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* providing box shadow when hovering on the buttons */
+.btn:hover{
+	box-shadow: 0px 0px 8px 1.5px white;
+}
+
+/* horizontal line for differentiating */
+hr{
+	border: 3px double aquamarine;
+}
+
+/* style for the heading of the alarms list */
+#list-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+/* style to add colon between inputs */
+#input-field span{
+margin-right: -4px;
+}
+
+/* style for the alarms list container */
+#alarm-list-container{
+	width: 95%;
+	padding: 15px 10px;
+}
+
+/* styles for the alarms list */
+#alarm-list{
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  max-height: 200px;
+  /* adding a scroll bar to view all the alarms in the list with ease */
+  overflow: scroll; 
+}
+/* styles for all the li tags */
+ul li {
+  padding: 10px;
+  padding-left: 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: navy;
+}

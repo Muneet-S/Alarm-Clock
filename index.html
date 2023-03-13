@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="src/styles.css">
+	<title>Alarm Clock</title>
+</head>
+<body>
+	<!-- the container for the alarm clock -->
+	<div id = "container"> 
+		<!-- the bar to show the current time -->
+		<div id = "current-time"> 
+			<span id = "hour"></span>
+			<span>:</span>
+			<span id = "minute"></span>
+			<span>:</span>
+			<span id = "second"></span>
+			<span id = "am-pm"></span>
+		</div>
+		<!-- div to take the inputs of hours, minutes, seconds and AM-PM value from the user -->
+		<div id="input-field">
+			<div>
+				<input type="text" name="hour" class="input"><span>:</span>
+				<input type="text" name="minute" class="input"><span>:</span>
+				<input type="text" name="second" class="input">
+				<button id ="am" > </button>
+			</div>
+			<!-- button to set the alarm -->
+			<button type="button" id = "set-alarm" class = "btn">Set Alarm</button>
+		</div>
+		<!-- container for the set alarms list -->
+		<div id="alarm-list-container">
+			<!-- heading for the alarms list -->
+			<div id ="list-heading">Alarms</div>
+				<hr>
+				<!-- list which will have all the alarms -->
+			<ul id = "alarm-list" type="none">
+				<!-- <li>
+					<span>
+						<span id = "hour">04</span>
+						<span>:</span>
+						<span id = "minute">10</span>
+						<span>:</span>
+						<span id = "second">33</span>
+						<span id = "am-pm">PM</span>
+					</span>
+					<button id="btn1" class="btn">Delete</button> 
+				</li>-->
+			</ul>
+		</div>
+	</div>
+	<script src="src/index.js"></script>
+</body>
+</html>
